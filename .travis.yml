@@ -1,0 +1,10 @@
+language: python
+branches:
+  only:
+  - source
+install:
+- pip install -r requirements.txt
+before_script:
+- pelican-themes -i ./theme/elegant
+script:
+- make publish github
