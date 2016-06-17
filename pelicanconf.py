@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHORS = 'John Bachman, Carlos Lopez, Alex Lubbock, Jeremy Muhlich'
 SITENAME = 'PySB'
 SITESUBTITLE = 'Systems biology modeling in Python'
-SITEURL = ''
+SITEURL = 'https://lolab-vu.github.io/pysb-website'
 SITELOGO = '/images/pysb-swirl.png'
 
 PATH = 'content'
