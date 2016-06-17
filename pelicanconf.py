@@ -16,7 +16,7 @@ DEFAULT_LANG = 'en'
 
 THEME = 'themes/pelican-blueidea'
 
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'extra/CNAME']
 
 MENUITEMS=[('Home', '/'),
            ('Support', '/support.html')]
