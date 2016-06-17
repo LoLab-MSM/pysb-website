@@ -4,8 +4,11 @@ branches:
   - source
 install:
 - pip install -r requirements.txt
+before_install:
+- openssl aes-256-cbc -K $encrypted_272b419fe231_key -iv $encrypted_272b419fe231_iv
+  -in deploy_key.enc -out deploy_key -d
+- chmod 600 deploy_key
+- mv deploy_key ~/.ssh/id_rsa
+- git remote add deploy ssh://git@github.com/${TRAVIS_REPO_SLUG}.git
 script:
 - make publish github
-env:
-  global:
-    secure: rKGSZsgDVNfJQkr2jePTqJ2ISuWTrNivGVDHKTVBhm4r8n75V1h7gQytGAmO+UVo7n/tp4eymoFDrvSUnqmsUZ7BvqcTg3wCNtGxR+13KSjzbr/5UjOcew5vG0bPWIbOk6YjuuKkYgUgqrNIsCMQcHN2w17rRTYyKmBMBvphKSf2GKh6LcUQ7AohPlF1Qwxt6BUzRGtx0oQA6cxFRpMZ24+33YnCSpWvMB2bIPoJ617UqcWBHhrs0CHjOj1p4tIKBQvyV0v94cWgX1b1Qbg6FkMHVehJoSwuSoN/r31ZzXBpefu6JY1PjIbCc5tvTaFQQYkfwmx1a2lIkn6wVnF8EOgrhNbCRr54LE/Q173xPVpnRSw1taqzGiW4uA9jEDBkk3CsZ+0xrfi8nCps8N1L7BN1b9/DSYpCfchAjxwWLFUrZQU3CLUrSdNc9UgcLnWgYm+sYMa2HFdc85SJG9XLmL3njPgB9Mg1z2og2cE0mZgr2l1TFI703N3B+z+0ynattcs0rQb1kgeX4cbQ7CKXUz7daYRK/t+0pD6NXC2Hnfz6/SIHxmErCP7QjAcDRLBT+sIcozvJhP0tmRVv9KGpH2n9ocDSzJVnfR/u9lL9AJ63ucRvrM4KC0uXrQJBqGECdqP+7uP0oQxSTdgajf5FnysQvc4PbOhSkIYFxIJ83UQ=
