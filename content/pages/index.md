@@ -3,6 +3,8 @@ Date: 2015-10-02 12:34
 URL:
 save_as: index.html
 
+[![Get PySB support at https://gitter.im/pysb/pysb](https://badges.gitter.im/pysb/pysb.svg)](https://gitter.im/pysb/pysb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 PySB is a framework for building mathematical models of biochemical systems as Python programs. PySB abstracts the complex process of creating equations describing interactions among multiple proteins or other biomolecules into a simple and intuitive domain specific programming language (see example below), which is internally translated into BioNetGen or Kappa rules and from there into systems of equations. PySB makes it straightforward to divide models into modules and to call libraries of reusable elements (macros) that encode standard biochemical actions. These features promote model transparency, reuse and accuracy. PySB also interoperates with standard scientific Python libraries such as NumPy, SciPy and SymPy enabling model simulation and analysis.
 
 > Lopez, C. F., Muhlich, J. L., Bachman, J. A. & Sorger, P. K. Programming biological models in Python using PySB. Mol Syst Biol 9, (2013). doi:10.1038/msb.2013.1
