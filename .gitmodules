@@ -1,3 +1,6 @@
-[submodule "themes/pelican-blueidea"]
-	path = themes/pelican-blueidea
-	url = https://github.com/blueicefield/pelican-blueidea
+[submodule "plugins/ipynb"]
+	path = plugins/ipynb
+	url = git://github.com/danielfrg/pelican-ipynb.git
+[submodule "pysb-tutorials"]
+	path = pysb-tutorials
+	url = git://github.com/lolab-vu/pysb-tutorials.git

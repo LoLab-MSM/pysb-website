@@ -24,6 +24,7 @@ for f in os.listdir('content/extra/'):
 
 MENUITEMS=[('Home', '/'),
            ('News', '/category/news.html'),
+           ('Tutorials', '/category/tutorials.html'),
            ('Support', '/support.html')]
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -38,3 +39,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = False
+
+MARKUP = ('md', 'ipynb')
+PLUGIN_PATH = './plugins'
+PLUGINS = ['ipynb.markup']
