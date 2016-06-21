@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHORS = 'John Bachman, Carlos Lopez, Alex Lubbock, Jeremy Muhlich'
 SITENAME = 'PySB'
 SITESUBTITLE = 'Systems biology modeling in Python'
-SITEURL = 'https://lolab-vu.github.io/pysb-website'
+SITEURL = ''
 SITELOGO = '/images/pysb-swirl.png'
 
 PATH = 'content'
@@ -16,11 +17,15 @@ DEFAULT_LANG = 'en'
 
 THEME = 'themes/pelican-blueidea'
 
-STATIC_PATHS = ['images', 'extra/CNAME']
+STATIC_PATHS = ['images', 'extra/']
+EXTRA_PATH_METADATA = {}
+for f in os.listdir('content/extra/'):
+    EXTRA_PATH_METADATA['extra/'+f] = {'path':f}
 
 MENUITEMS=[('Home', '/'),
            ('Support', '/support.html')]
 DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
