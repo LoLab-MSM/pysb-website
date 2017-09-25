@@ -9,20 +9,14 @@ PySB is a framework for building mathematical models of biochemical systems as P
 
 > Lopez, C. F., Muhlich, J. L., Bachman, J. A. & Sorger, P. K. Programming biological models in Python using PySB. Mol Syst Biol 9, (2013). doi:[10.1038/msb.2013.1](http://dx.doi.org/10.1038/msb.2013.1)
 
+# Download
+
+To get started with PySB, see the [download page](/download.html) for
+instructions.
+
 # Documentation
 
 All of the [PySB technical documentation](http://pysb.readthedocs.org) is available online, courtesy of Read the Docs. The pysb/examples directory in the source tree contains sample models and other scripts if you'd prefer to learn by example. One of these examples and its output is reproduced below.
-
-# Download
-
-You can get the latest release of PySB from the Python Package Index. The documentation contains a list of the dependencies and other installation instructions. If you are new to scientific programming in Python, you may want to start by downloading the Enthought Python Distribution (EPD) which already includes most of the dependencies.
-
-PySB OVA For those who are not comfortable installing Python packages or compiling source code, we also provide a PySB virtual appliance with Ubuntu Linux, PySB and its dependencies pre-installed. You'll need virtualization software to run it; we recommend the free and open-source program VirtualBox. There are detailed instructions in the PySB documentation on how to set up the appliance in VirtualBox.
-
-Those who are interested in the PySB source code can clone it with Git:
-
-    :::bash
-    git clone git://github.com/pysb/pysb
 
 # Contributing
 
