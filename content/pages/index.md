@@ -28,11 +28,10 @@ Model code:
 
     #!python
     from pysb import *
-    from pysb.integrate import odesolve
+    from pysb.simulator import ScipyOdeSimulator
     from pylab import linspace, plot, xlabel, ylabel, show
 
     # A simple model with a reversible binding rule
-
     Model()
 
     # Declare the monomers
@@ -56,15 +55,16 @@ Model code:
     Observable('LR', L(s=1) % R(s=1))
 
     if __name__ == '__main__':
-    # Simulate the model through 40 seconds
-    time = linspace(0, 40, 100)
-    print "Simulating..."
-    x = odesolve(model, time)
-    # Plot the trajectory of LR
-    plot(time, x['LR'])
-    xlabel('Time (seconds)')
-    ylabel('Amount of LR')
-    show()
+        # Simulate the model through 40 seconds
+        time = linspace(0, 40, 100)
+        print "Simulating..."
+        sim_result = ScipyOdeSimulator(model, time).run()
+        
+        # Plot the trajectory of LR
+        plot(time, sim_result.observables['LR'])
+        xlabel('Time (seconds)')
+        ylabel('Amount of LR')
+        show()
 
 Output:
 
