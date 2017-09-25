@@ -7,11 +7,11 @@ save_as: index.html
 
 PySB is a framework for building mathematical models of biochemical systems as Python programs. PySB abstracts the complex process of creating equations describing interactions among multiple proteins or other biomolecules into a simple and intuitive domain specific programming language (see example below), which is internally translated into BioNetGen or Kappa rules and from there into systems of equations. PySB makes it straightforward to divide models into modules and to call libraries of reusable elements (macros) that encode standard biochemical actions. These features promote model transparency, reuse and accuracy. PySB also interoperates with standard scientific Python libraries such as NumPy, SciPy and SymPy enabling model simulation and analysis.
 
-> Lopez, C. F., Muhlich, J. L., Bachman, J. A. & Sorger, P. K. Programming biological models in Python using PySB. Mol Syst Biol 9, (2013). doi:10.1038/msb.2013.1
+> Lopez, C. F., Muhlich, J. L., Bachman, J. A. & Sorger, P. K. Programming biological models in Python using PySB. Mol Syst Biol 9, (2013). doi:[10.1038/msb.2013.1](http://dx.doi.org/10.1038/msb.2013.1)
 
 # Documentation
 
-All of the PySB documentation is available online, courtesy of Read the Docs. The pysb/examples directory in the source tree contains sample models and other scripts if you'd prefer to learn by example. One of these examples and its output is reproduced below.
+All of the [PySB technical documentation](http://pysb.readthedocs.org) is available online, courtesy of Read the Docs. The pysb/examples directory in the source tree contains sample models and other scripts if you'd prefer to learn by example. One of these examples and its output is reproduced below.
 
 # Download
 
@@ -32,7 +32,7 @@ Development is centered around our GitHub project page. Bugs and other problems 
 
 Model code:
 
-    :::python
+    #!python
     from pysb import *
     from pysb.integrate import odesolve
     from pylab import linspace, plot, xlabel, ylabel, show
@@ -82,9 +82,17 @@ The above source code is available as hello_pysb.py in the directory of example 
 
 PySB is primarily developed by members of the Sorger Lab at Harvard Medical School and the Lopez Lab at Vanderbilt University:
 
-Jeremy L. Muhlich (jmuhlich@bitflood.org)
-Carlos F. Lopez (c.lopez@vanderbilt.edu)
-John A. Bachman (bachmanjohn@gmail.com)
+## Vanderbilt
+
+* Carlos F. Lopez (c.lopez@vanderbilt.edu)
+* Alex L. R. Lubbock (alex.lubbock@vanderbilt.edu)
+* Leonard A. Harris (l.harris@vanderbilt.edu)
+* James Pino (james.c.pino@vanderbilt.edu)
+
+## Harvard
+
+* Jeremy L. Muhlich (jmuhlich@bitflood.org)
+* John A. Bachman (bachmanjohn@gmail.com)
 
 # Funding
 

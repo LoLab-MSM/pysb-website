@@ -23,6 +23,7 @@ for f in os.listdir('content/extra/'):
     EXTRA_PATH_METADATA['extra/'+f] = {'path':f}
 
 MENUITEMS=[('Home', '/'),
+           ('Download', '/download.html'),
            ('News', '/category/news.html'),
            ('Tutorials', '/category/tutorials.html'),
            ('Support', '/support.html')]
